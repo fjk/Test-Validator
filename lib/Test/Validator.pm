@@ -20,9 +20,10 @@ use Carp;
 sub validate {
 }
 
+sub foo {}
+
 
 1; # Magic true value required at end of module
-
 }
 
 __END__
@@ -34,8 +35,7 @@ Test::Validator - [One line description of module's purpose here]
 
 =head1 VERSION
 
-This document describes Test::Validator version 0.0.1
-1
+This document describes Test::Validator version 0.0.3
 
 =head1 SYNOPSIS
 
@@ -62,6 +62,26 @@ This document describes Test::Validator version 0.0.1
     exported, or methods that may be called on objects belonging to the
     classes provided by the module.
 
+=head2 Methods
+ 
+=over
+ 
+=item validate
+ 
+this is validate
+  
+=item $object->baz()
+ 
+=item B<qux>
+
+=item foo 
+
+This is the description for the foo message 
+
+ 
+=back
+ 
+=cut
 
 =head1 DIAGNOSTICS
 
