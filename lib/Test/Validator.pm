@@ -1,10 +1,13 @@
-package Test::Validator;
+use v5.30;
+
+package Test::Validator v0.0.3 {
 
 use warnings;
 use strict;
 use Carp;
 
-use version; $VERSION = qv('0.0.3');
+#use version; 
+#our $VERSION = qv('0.0.3');
 
 # Other recommended modules (uncomment to use):
 #  use IO::Prompt;
@@ -14,9 +17,14 @@ use version; $VERSION = qv('0.0.3');
 
 
 # Module implementation here
+sub validate {
+}
 
 
 1; # Magic true value required at end of module
+
+}
+
 __END__
 
 =head1 NAME
@@ -27,7 +35,7 @@ Test::Validator - [One line description of module's purpose here]
 =head1 VERSION
 
 This document describes Test::Validator version 0.0.1
-
+1
 
 =head1 SYNOPSIS
 
