@@ -18,6 +18,27 @@ use Carp;
 
 # Module implementation here
 sub validate {
+	my $range;
+   	my @range;
+    # assume we have a string if we receive only one argument
+    if ( @_ == 1) {
+        $range = $_[0];
+    } #otherwise we received a list
+   	else {
+        ... 
+   	}	
+
+    # remove any space from string 
+    $range =~ s/\s+//g;
+    # die if invalid chars 
+    croak "invalid chars passed in string [range]" 
+        if $range =~ /[^\s,.\d]/;
+
+    
+    @range = eval "$range"; ## no critic
+	#eval { @range = "$range" };
+
+    return @range;
 }
 
 sub foo {}
