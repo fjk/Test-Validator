@@ -8,10 +8,17 @@ WriteMakefile(
     VERSION_FROM        => 'lib/Test/Validator.pm',
     ABSTRACT_FROM       => 'lib/Test/Validator.pm',
     PL_FILES            => {},
-    PREREQ_PM => {
+    
+	PREREQ_PM => {
         'Test::More' => 0,
         'version'    => 0,
+		'Test::Exception' => 0,
     },
+	
+	BUILD_REQUIRES => {
+		'Carp' => 0, 
+	},
+	
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Test-Validator-*' },
 );
